@@ -1,0 +1,27 @@
+Link : https://www.kaggle.com/datasets/shubhamgoel27/dermnet
+
+Project Description:
+
+This project focuses on classifying skin disease images into multiple categories using deep learning. 
+The dataset contains real medical images grouped into folders, where each folder represents a specific 
+skin condition. The goal is to build a model that can identify the correct disease class from an input 
+image. This type of system can support early screening and help medical professionals or users get a 
+quick first-level suggestion before consulting a dermatologist.
+
+Problem Definition:
+
+The objective of this project is to classify skin images into one of the multiple disease categories 
+provided in the dataset. Each image belongs to a single class such as acne, eczema, psoriasis, fungal 
+infections, or other skin conditions.
+
+This is a multi-class image classification problem, where the target variable is the disease label 
+determined by the folder name.
+
+Two models were developed:
+- A baseline CNN model trained from scratch.
+- A pretrained MobileNetV2 model using transfer learning.
+
+The pretrained model produced better results due to stronger feature extraction and better generalization.
+
+The model’s performance is evaluated using accuracy, confusion matrix, and the classification report 
+(precision, recall and F1-score).

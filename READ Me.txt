@@ -1,0 +1,59 @@
+## Project Roadmap & Timeline
+
+| Week       | Focus                        | Tasks                                                                                                      |
+|------------|------------------------------|------------------------------------------------------------------------------------------------------------|
+| **Week 1** | Setup & Dataset Overview     | Create project structure, inspect dataset folders, count images, prepare generators                        |
+| **Week 2** | Image EDA                    | Explore class distribution, sample images, plan preprocessing and augmentation                             |
+| **Week 3** | Modeling                     | Build and train baseline CNN, build and train pretrained MobileNetV2 model                                 |
+| **Week 4** | Evaluation & Documentation   | Evaluate final model, generate confusion matrix, classification report, finalize notebooks & presentation  |
+
+# Skin Disease Image Classification Project
+
+This project uses a multi-class skin disease dataset (DermNet) to build two models:
+a baseline CNN and a pretrained MobileNetV2 model. The goal is to classify images
+into different skin disease categories and compare the performance of both models.
+
+## Dataset
+- Source: DermNet (Kaggle)
+- Structure: train/ and test/ folders
+- Each folder contains multiple class folders (acne, eczema, etc.)
+- Images vary in size, lighting and texture
+- Multi-class classification problem with 3+ classes
+
+## Objective
+Build and compare:
+1. A simple CNN model (baseline)
+2. A pretrained MobileNetV2 model (transfer learning)
+
+Select the best performing model and evaluate it on the final test set.
+
+## Project Structure
+
+
+## Main Steps
+
+- Dataset overview and structure
+- EDA with sample images and class distribution
+- Baseline CNN model
+- Pretrained MobileNetV2 model
+- Evaluation (confusion matrix, classification report)
+- Error analysis
+- Final model selected and saved
+
+## Results Summary
+
+- The baseline CNN underperformed due to limited capacity
+- MobileNetV2 achieved better accuracy and generalization
+- Pretrained model was selected as the final model
+
+## Final Model
+Saved at:
+`models/final_skin_disease_model.keras`
+
+## Requirements
+- Python 3.x
+- TensorFlow / Keras
+- scikit-learn
+- matplotlib
+- pillow
+- numpy

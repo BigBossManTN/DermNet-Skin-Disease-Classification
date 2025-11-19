@@ -1,0 +1,49 @@
+# Skin Disease Dataset - Data Dictionary
+
+## Dataset Overview
+The dataset is organized into two main folders:
+- train/
+- test/
+
+Each folder contains multiple subfolders. Each subfolder represents one skin disease class.
+Every image inside a folder belongs to that class.
+
+Images are RGB and are resized to 224x224 during model preprocessing.
+
+## Classes and Image Counts (Train Set)
+
+| Class Name                                                         | Train Images |
+|-------------------------------------------------------------------|--------------|
+| Acne and Rosacea Photos                                           | 312          |
+| Actinic Keratosis Basal Cell Carcinoma and other Malignant Lesions | 288        |
+| Atopic Dermatitis Photos                                          | 123          |
+| Bullous Disease Photos                                            | 113          |
+| Cellulitis Impetigo and other Bacterial Infections                | 73           |
+| Eczema Photos                                                     | 309          |
+| Exanthems and Drug Eruptions                                      | 101          |
+| Hair Loss Photos Alopecia and other Hair Diseases                 | 60           |
+| Herpes HPV and other STDs Photos                                  | 102          |
+| Light Diseases and Disorders of Pigmentation                      | 143          |
+| Lupus and other Connective Tissue diseases                        | 105          |
+| Melanoma Skin Cancer Nevi and Moles                               | 116          |
+| Nail Fungus and other Nail Disease                                | 261          |
+| Poison Ivy Photos and other Contact Dermatitis                    | 65           |
+| Psoriasis pictures Lichen Planus and related diseases             | 352          |
+| Scabies Lyme Disease and other Infestations and Bites             | 108          |
+| Seborrheic Keratoses and other Benign Tumors                      | 343          |
+| Systemic Disease                                                  | 152          |
+| Tinea Ringworm Candidiasis and other Fungal Infections            | 325          |
+| Urticaria Hives                                                   | 53           |
+| Vascular Tumors                                                   | 121          |
+| Vasculitis Photos                                                 | 105          |
+| Warts Molluscum and other Viral Infections                        | 272          |
+
+(If you want, we can add the test set counts too.)
+
+## Target
+- The target label is the folder name of the image (multi-class problem).
+
+## Notes
+- Dataset is heavily imbalanced (some classes have more than 300 images, some only 50).
+- Images vary in resolution, lighting and background.
+- No processed images are saved to disk; preprocessing is done dynamically using ImageDataGenerator.
